@@ -58,7 +58,7 @@ export class ProductListComponent implements OnInit {
       })
     }
 
-    toggleImage(): void {
+    toggleImage(): void { 
       this.showImage = !this.showImage;
     }
     //#endregion
