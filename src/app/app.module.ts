@@ -28,12 +28,12 @@ import { WelcomeComponent } from "./home/welcome.component";
     HttpClientModule,
     RouterModule.forRoot([
       { path: 'products', component: ProductListComponent },
-      { path: 'products/:id', component: ProductDetailComponent },
+      { path: 'product/:id', component: ProductDetailComponent },
       { path: 'welcome', component: WelcomeComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' } 
 
-    ], { useHash: true })
+    ])
   ],
   bootstrap: [AppComponent]
 })
